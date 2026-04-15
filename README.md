@@ -1,10 +1,10 @@
-# 📊 FinRisk-ML — Financial Risk Intelligence Suite
+#  FinRisk-ML — Financial Risk Intelligence Suite
 
 > **Machine learning models and quantitative analysis for corporate default prediction and equity risk profiling — built for venture capital credit screening and portfolio management.**
 
 ---
 
-## 🗂️ Repository Overview
+##  Repository Overview
 
 This repository contains two end-to-end data science projects developed as part of a Financial Health Assessment Tool for a venture capital firm. Together they form a complete financial risk intelligence pipeline — predicting **corporate insolvency** from balance-sheet data and profiling **market risk** from historical equity prices.
 
@@ -15,7 +15,7 @@ This repository contains two end-to-end data science projects developed as part 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 FinRisk-ML/
@@ -44,7 +44,7 @@ FinRisk-ML/
 
 ---
 
-## 🧠 Part A — Financial Default Prediction
+##  Financial Default Prediction
 
 ### Problem Statement
 A group of venture capitalists needs to identify which companies in their portfolio are likely to become **financial defaulters** — defined as having a negative net worth in the following fiscal year. Early identification enables proactive risk mitigation before credit losses materialise.
@@ -76,7 +76,7 @@ Final Model: Tuned Random Forest
 | LR Base | 97.61% | 37.50% | 100.00% | 54.55% | 99.84% |
 | LR + VIF + Optimal Threshold | 99.52% | 75.00% | **100.00%** | **85.71%** | **99.84%** |
 | RF Base | 99.04% | 100.00% | 33.33% | 50.00% | 99.84% |
-| **RF Tuned (Final)** ✅ | **99.52%** | **75.00%** | **100.00%** | **85.71%** | **99.84%** |
+| **RF Tuned (Final)**  | **99.52%** | **75.00%** | **100.00%** | **85.71%** | **99.84%** |
 
 ### Key Findings
 - **PBT as % of Total Income** is the single strongest predictor of default (11.2% importance)
@@ -87,7 +87,7 @@ Final Model: Tuned Random Forest
 
 ---
 
-## 📈 Part B — Stock Market Risk Analysis
+##  Stock Market Risk Analysis
 
 ### Problem Statement
 Quantify the **risk-return profile** of five major Indian equities over an eight-year period (March 2016 – March 2024) to inform portfolio construction and allocation decisions.
@@ -124,7 +124,7 @@ Yes Bank       ██                                  < 5%  Speculative Only
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -159,12 +159,12 @@ jupyter notebook part_a/PartA_Financial_Default_Prediction.ipynb
 jupyter notebook part_b/PartB_Stock_Market_Risk_Analysis.ipynb
 ```
 
-> ⚠️ **Important:** Both notebooks expect the CSV data files to be in the `data/` folder.  
+>  **Important:** Both notebooks expect the CSV data files to be in the `data/` folder.  
 > The notebooks use relative paths — run them from the repository root or update the `pd.read_csv()` paths accordingly.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Library | Version | Purpose |
 |---|---|---|
@@ -176,7 +176,7 @@ jupyter notebook part_b/PartB_Stock_Market_Risk_Analysis.ipynb
 
 ---
 
-## 📊 Methodology Notes
+##  Methodology Notes
 
 ### Why Recall over Accuracy?
 In credit risk, a **false negative** (missing a real defaulter) is far costlier than a **false positive** (flagging a healthy company). Accuracy is misleading on imbalanced datasets — a model predicting "no default" for every company scores 94.5% accuracy while providing zero business value. **Recall and F1 Score** are the primary metrics.
@@ -193,7 +193,7 @@ Financial data naturally contains extreme values (micro-cap vs large-cap compani
 
 ---
 
-## 📋 Business Report Presentations
+##  Business Report Presentations
 
 Full business-oriented slide decks (no code) are available in the `reports/` folder:
 
@@ -202,7 +202,7 @@ Full business-oriented slide decks (no code) are available in the `reports/` fol
 
 ---
 
-## 🔑 Key Takeaways
+##  Key Takeaways
 
 1. **Profitability margins are the earliest warning signals.** PBT%, PAT%, and Cash Profit% collectively drive ~48% of the default prediction model. Watch these before balance sheet deterioration becomes visible.
 
@@ -214,16 +214,15 @@ Full business-oriented slide decks (no code) are available in the `reports/` fol
 
 ---
 
-## 📄 License
+##  License
 
 This project is submitted as an academic assignment for the Great Learning Data Science programme. The datasets and business context are provided by Great Learning. All analysis, code, and documentation in this repository are original work.
 
 ---
 
-## 🙋 Author
+##  Author
 
-**[Your Name]**  
-Data Science Programme — Great Learning  
+**Morris Capt**   
 April 2026
 
 ---
